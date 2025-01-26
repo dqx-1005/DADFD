@@ -694,33 +694,33 @@
       }
     }
   },
-  "arxiv": {
+  "ogbn-arxiv": {
     "GCN": {
       "MLP": {
         "dataset": "ogbn-arxiv",
         "teacher": "GCN",
         "teacher_layers": 3,
-        "teacher_hidden": 512,
+        "teacher_hidden": 256,
         "dropout_t": 0.5,
         "student": "MLP",
-        "student_layers": 2,
-        "student_hidden": 64,
-        "dropout_s": 0.7,
-        "learning_rate": 0.01,
-        "weight_decay": 0.0005,
+        "student_layers": 3,
+        "student_hidden": 256,
+        "dropout_s": 0.8,
+        "learning_rate": 0.005,
+        "weight_decay": 0.000,
         "seed": 2024,
         "max_epoch": 500,
-        "alpha": 0.7,
-        "beta": 15,
-        "beta": 0.3,
+	"K":2,
+        "alpha": 0.9,
+        "beta": 1,
         "gamma": 1,
-        "delta": 1,
+        "delta": 0.1,
         "split_idx": 0,
         "norm_type": "batch"
       }
     }
   },
-  "products": {
+  "ogbn-products": {
     "GCN": {
       "MLP": {
         "dataset": "ogbn-products",
@@ -729,15 +729,15 @@
         "teacher_hidden": 256,
         "dropout_t": 0.5,
         "student": "MLP",
-        "student_layers": 2,
+        "student_layers": 3,
         "student_hidden": 256,
-        "dropout_s": 0.7,
+        "dropout_s": 0.9,
         "learning_rate": 0.003,
         "weight_decay": 0.0,
         "seed": 2024,
         "max_epoch": 500,
+	"K":2,
         "alpha": 0.7,
-        "beta": 15,
         "beta": 0.3,
         "gamma": 1,
         "delta": 1,
