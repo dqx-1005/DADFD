@@ -1,0 +1,52 @@
+dataset_source:
+# 选择npz格式还是planetoid格式
+  'npz'
+# 'planetoid'
+# Random seed (for reproducibility).
+# standardize_graph use largest_connected_component as graph
+cora:
+  train_config:
+    split:
+      train_examples_per_class:
+      val_examples_per_class:
+      test_examples_per_class:
+      train_size: 140
+      val_size: 500
+      test_size: 1000
+    standardize_graph: True
+
+citeseer:
+  train_config:
+    split:
+      train_examples_per_class:
+      val_examples_per_class:
+      test_examples_per_class:
+      train_size: 120
+      val_size: 500
+      test_size: 1000
+    standardize_graph: True
+
+
+pubmed:
+  train_config:
+    split:
+      train_examples_per_class:
+      val_examples_per_class:
+      test_examples_per_class:
+      train_size: 60
+      val_size: 500
+      test_size: 1000
+    standardize_graph: True
+
+reddit:
+  train_config:
+    split:
+      train_examples_per_class:
+      val_examples_per_class:
+      test_examples_per_class:
+      train_size: 153431
+      val_size: 23831
+      test_size: 55703
+    standardize_graph: True
+
+
