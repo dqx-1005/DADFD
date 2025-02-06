@@ -115,11 +115,11 @@ def DADFD(param, data, G, t_penultimate_f, s_penultimate_f, output_t, output_s, 
         rekd_alpha = 24
         rekd_beta = 1
     elif param['dataset'] in ['ogbn-arxiv']:
-        rekd_alpha = 200
-        rekd_beta = 0.3
+        rekd_alpha = 1
+        rekd_beta = 1
     elif param['dataset'] in ['ogbn-products']:
-        rekd_alpha = 220
-        rekd_beta = 0.3
+        rekd_alpha = 1
+        rekd_beta = 1
     else:
         rekd_alpha = 15
         rekd_beta = 3
